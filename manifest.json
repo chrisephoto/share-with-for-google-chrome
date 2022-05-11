@@ -1,20 +1,29 @@
 {
-   "background": {
-      "scripts": [ "share.js" ]
-   },
-   "browser_action": {
+  // Required
+  "manifest_version": 3,
+  "name": "Share with for Google Chrome™",
+  "version": "2.0.0",
+
+  // Recommended
+  "action": {
       "default_icon": "icon.png",
       "default_popup": "popup.html"
    },
-   "description": "An extension that allows you to easily share web pages to various social sites and web apps.",
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiAu8tYuOw6POS6Ny/uhvEclok0KcJSK7XTP5+XkvjIUWjVlUJsXav/bLcivdrtMG56clT0VdwELTyh+0sKwsx+tMxu1rWUb3iOXLwRQVEUlgLAMP0R+yLNK8FnyeipztcJBlLwRTzsI3gLVHnJsDaZfDszMqIl1z2nYtvlBETeQIDAQAB",
-   "manifest_version": 2,
-   "name": "Share with for Google Chrome™",
-   "options_ui": {
-      "chrome_style": true,
-      "page": "options.html"
-   },
-   "permissions": [ "tabs", "http://*/*", "https://*/*", "storage" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0.1"
+  "description": "An extension that allows you to easily share web pages to various social sites and web apps.",
+
+  // Optional
+  "author": "Chris Emanuel",
+  "background": {
+    "service_worker": "share.js"
+  },
+  "homepage_url": "https://github.com/chrisephoto/share-with-for-google-chrome",
+  "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiAu8tYuOw6POS6Ny/uhvEclok0KcJSK7XTP5+XkvjIUWjVlUJsXav/bLcivdrtMG56clT0VdwELTyh+0sKwsx+tMxu1rWUb3iOXLwRQVEUlgLAMP0R+yLNK8FnyeipztcJBlLwRTzsI3gLVHnJsDaZfDszMqIl1z2nYtvlBETeQIDAQAB",
+  "offline_enabled": false,
+	//"options_page": "options.html",
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": ["tabs", "http://*/*", "https://*/*", "storage"],
+  "short_name": "Share with",
+  "update_url": "https://clients2.google.com/service/update2/crx"
 }
