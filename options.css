@@ -11,7 +11,7 @@ input {
 label,
 li,
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
 }
 
 label {

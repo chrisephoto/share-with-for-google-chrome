@@ -8,6 +8,10 @@ function load_options() {
 
 		input.id = servicesList[i].id;
 		input.value = servicesList[i].title;
+		
+		if (typeof localStorage[servicesList[i].id] === "undefined") {
+			input.checked = true;
+		}
 
 		label.htmlFor = servicesList[i].id;
 		label.innerHTML = servicesList[i].title;
@@ -51,8 +55,8 @@ function select_none() {
 document.addEventListener("DOMContentLoaded", function() {
 	load_options();
 	restore_options();
-	document.getElementById("select-all").addEventListener("click", select_all);
-	document.getElementById("select-none").addEventListener("click", select_none);
+	//document.getElementById("select-all").addEventListener("click", select_all);
+	//document.getElementById("select-none").addEventListener("click", select_none);
 	a = document.querySelectorAll("input[type=checkbox]");
   Array.prototype.forEach.call(a, function(radio) {
     radio.addEventListener("change", function() {
