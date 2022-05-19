@@ -7,7 +7,7 @@ This extension does not collect or share your data in any way. All user preferen
 Version 2.0.1
 * Fixed issue with encoded page titles
 
-## Version History
+### Version History
 Version 2.0.0
 * Entire code re-written to optimize performance and streamline future updates
 * Updated toolbar icon to better match Chrome UI
@@ -28,6 +28,9 @@ Version 1.0.0
 
 Version 0.0.1
 * Initial release
+
+## Feedback and Feature Requests
+If you have any issues, bugs, or feedback to report, or if you want to request new features or serivces, please select the issues link above and submit a new issue.
 
 ## Download
 [View the extension on the Chrome Web Store](https://chrome.google.com/webstore/detail/share-with-for-google-chr/egpmaojaajjjijckmfdlncdakdojbhgk)
